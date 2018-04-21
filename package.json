@@ -1,0 +1,28 @@
+{
+  "name": "cm-scoreboard",
+  "version": "1.0.0",
+  "description": "A football scoreboard component for use in React apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Uh oh, no tests\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aNerdInTheHand/cm-scoreboard.git"
+  },
+  "keywords": [
+    "react",
+    "reusable",
+    "component",
+    "js",
+    "soccer",
+    "football",
+    "scoreboard"
+  ],
+  "author": "Nick Holvast",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aNerdInTheHand/cm-scoreboard/issues"
+  },
+  "homepage": "https://github.com/aNerdInTheHand/cm-scoreboard#readme"
+}
