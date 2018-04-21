@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-Regular-webfont.svg#OpenSans-Regular') format('svg');
+
+}
+
+@font-face {
+  font-family: 'OpenSansLight';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/OpenSans-Light-webfont.eot');
+  src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-Light-webfont.svg#OpenSans-Light') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSansSemiBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/OpenSans-Semibold-webfont.eot');
+  src: url('../fonts/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Semibold-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Semibold-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-Semibold-webfont.svg#OpenSans-Semibold') format('svg');
+}
+
+@font-face {
+  font-family: 'OpenSansBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../fonts/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+    url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+    url('../fonts/OpenSans-Bold-webfont.svg#OpenSans-Bold') format('svg');
+}
+
+$regular-font: "OpenSans", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$light-font: "OpenSansLight", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$semi-bold-font: "OpenSansSemiBold", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$bold-font: "OpenSansBold", Arial, 'Helvetica Neue', Helvetica, sans-serif;

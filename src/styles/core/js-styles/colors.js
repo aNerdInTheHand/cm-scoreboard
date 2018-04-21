@@ -1,0 +1,75 @@
+export const govukBlue = '#005ea5'
+
+// Standard palette, colours
+export const babyPink = '#f499be'
+export const babyPink25 = '#fdebf2'
+export const babyPink50 = '#faccdf'
+export const brown = '#b58840'
+export const brown25 = '#f0e7d7'
+export const brown50 = '#dac39c'
+export const fuschia = '#912b88'
+export const fuschia25 = '#e9d4e6'
+export const fuschia50 = '#c994c3'
+export const grassGreen = '#85994b'
+export const grassGreen25 = '#e7ebda'
+export const grassGreen50 = '#c2cca3'
+export const green = '#006435'
+export const green25 = '#cce0d6'
+export const green50 = '#7fb299'
+export const lightBlue = '#2b8cc4'
+export const lightBlue25 = '#d5e8f3'
+export const lightBlue50 = '#96c6e2'
+export const mauve = '#6f72af'
+export const mauve25 = '#e2e2ef'
+export const mauve50 = '#b7b9d7'
+export const mellowRed = '#df3034'
+export const mellowRed25 = '#f9d6d6'
+export const mellowRed50 = '#ef9998'
+export const orange = '#f47738'
+export const orange25 = '#fde4d4'
+export const orange50 = '#fabb96'
+export const pink = '#d53880'
+export const pink25 = '#f6d7e5'
+export const pink50 = '#eb9bbe'
+export const purple = '#2e358b'
+export const purple25 = '#d5d6e7'
+export const purple50 = '#9799c4'
+export const red = '#b10e1e'
+export const red25 = '#efcfd1'
+export const red50 = '#d9888c'
+export const turquoise = '#28a197'
+export const turquoise25 = '#d5ecea'
+export const turquoise50 = '#95d0cb'
+export const yellow = '#ffbf47'
+export const yellow25 = '#fff2d3'
+export const yellow50 = '#ffdf94'
+
+// Standard palette, greys
+export const black = '#0b0c0c'
+export const grey1 = '#6f777b'
+export const grey2 = '#bfc1c3'
+export const grey3 = '#dee0e2'
+export const grey4 = '#f8f8f8'
+export const white = '#fff'
+
+// Assigned colors
+export const alphaColour = govukBlue       // Alpha badges and banners
+export const bannerTextColour = '#000'        // Text colour for Alpha & Beta banners
+export const betaColour = govukBlue        // Beta badges and banners
+export const borderColour = grey2           // Borders, seperators, rules, keylines etc.
+export const buttonColour = '#00823b'
+export const canvasColour = grey4          // Page background
+export const discoveryColour = govukBlue   // Discovery badges and banners
+export const errorBackground = '#fef7f7 '      // Error background colour
+export const errorColour = red              // Error text and border colour
+export const focusColour = yellow
+export const highlightColour = grey4       // Table stripes etc.
+export const linkActiveColour = lightBlue
+export const linkColour = govukBlue
+export const linkHoverColour = lightBlue
+export const linkVisitedColour = '#4c2c92'
+export const liveColour = grassGreen       // Live badges and banners
+export const pageColour = white             // The page
+export const panelColour = grey3           // Related links panel, page footer etc.
+export const secondaryTextColour = grey1  // Section headers, help text etc.
+export const textColour = black             // Standard text colour
