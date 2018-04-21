@@ -1,17 +1,17 @@
 import styled from 'styled-components'
 import {
-  govukBlue,
+  black,
   orange,
   purple50,
-  red
+  yellow50
 } from './core/js-styles/colors.js'
 
 export const Wrapper = styled.div`
-  background-color: ${govukBlue};
+  background-color: ${purple50};
   color: ${orange};
 `
 export const Title = styled.h1`
   font-size: 30px;
-  color: ${red};
-  background-color: ${purple50};
+  color: ${yellow50};
+  background-color: ${black};
 `
