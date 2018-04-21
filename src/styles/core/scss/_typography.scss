@@ -1,0 +1,70 @@
+@import "fonts";
+
+$black: #000000;
+$link-colour: #0000FF;
+$link-active-colour: #000033;
+$grey-1: #acacac;
+$turquoise: #40e0d0;
+$gutter: 20px;
+$halfGutter: $gutter/2;
+
+body {
+  color: $black;
+  font-family: $regular-font;
+  font-size: 16px;
+}
+
+h1,
+h2 {
+  font-family: $light-font;
+  margin: $gutter 0 $halfGutter 0;
+}
+
+h3,
+h4 {
+  font-family: $semi-bold-font;
+  margin: $gutter 0 $halfGutter 0;
+}
+
+a,
+a:visited {
+  color: $link-colour;
+  cursor: pointer;
+  transition: all 0.3s linear;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $link-active-colour;
+    outline: none;
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-family: $bold-font;
+}
+
+.source {
+  color: $grey-1;
+  font-size: 12px;
+
+  &.right {
+    float: right;
+  }
+}
+
+.descriptor {
+  font-family: $light-font;
+  font-size: 22px;
+  line-height: 1.2em;
+  margin-bottom: $gutter;
+
+  .highlight {
+    color: $turquoise;
+    font-family: $regular-font;
+    font-size: 38px;
+    line-height: 1.2em;
+  }
+}
