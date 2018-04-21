@@ -1,31 +1,34 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import {Wrapper, Title} from './styles/styled-components.js'
-import Button from './styles/core/js-styles/Button.js'
+// import {Wrapper,Title} from './styles/styled-components.js'
+// import Button from './styles/core/js-styles/Button.js'
+import NumberBlock from './styles/core/js-styles/NumberBlock'
+import propTypes, { defaultProps } from './propTypes/scoreboard'
 
-require('./images/logo-gov-white.png')
-
-export default class Template extends Component {
-  clickFunction () {
-    this.props.onButtonClick()
-  }
+export default class Scoreboard extends Component {
+  // clickFunction () {
+  //   this.props.onButtonClick()
+  // }
 
   render () {
     return (
-      <Wrapper id='template-wrapper'>
-        <Title id='template-title'>Scoreboard Goes Here!</Title>
-        <Button
-          id='template-button'
-          type='button'
-          onClick={() => this.clickFunction()}
-        >
-          Click Me!
-        </Button>
-      </Wrapper>
+      <div id='scoreboard-wrapper'>
+        <div id='scoreboard-title' className='scoreboard-row'>
+          <p>The Scottish & Newcastle United Scoreboard</p>
+        </div>
+        <div id='scoreboard-middle-row' className='scoreboard-row'>
+          <div>
+            <NumberBlock>
+              5
+            </NumberBlock>
+          </div>
+        </div>
+        <div id='scoreboard-bottom-row' className='scoreboard-row'>
+          <p>Some other stuff</p>
+        </div>
+      </div>
     )
   }
 }
 
-Template.propTypes = {
-  onButtonClick: PropTypes.func
-}
+Scoreboard.propTypes = propTypes
+Scoreboard.defaultProps = defaultProps

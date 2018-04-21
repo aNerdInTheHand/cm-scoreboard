@@ -1,0 +1,13 @@
+$titleBackground: '#f9f7f7';
+$titleText: '#444343';
+
+#scoreboardWrapper {
+  display: flex;
+  width: 100%;
+}
+
+#scoreboard-title p {
+  background-color: $titleBackground;
+  color: $titleText;
+  text-align: center;
+}
