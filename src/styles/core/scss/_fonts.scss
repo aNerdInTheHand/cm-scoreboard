@@ -1,18 +1,30 @@
 @font-face {
-  font-family: 'CodystarLight';
-  font-style: normal;
-  font-weight: normal;
+  font-family: 'DotMatrix';
+  src: url('../fonts/Codystar-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DotMatrixLight';
   src: url('../fonts/Codystar-Light.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Codystar';
-  font-style: normal;
-  font-weight: normal;
-  src: url('../fonts/Codystar-Regular.ttf') format('truetype');
+  font-family: 'Detail';
+  src: url('../fonts/Quicksand-Medium.ttf') format('truetype');
 }
 
-$dot-matrix-font: "Codystar", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$dot-matrix-light-font: "CodystarLight", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$semi-bold-font: "OpenSansSemiBold", Arial, 'Helvetica Neue', Helvetica, sans-serif;
-$bold-font: "OpenSansBold", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+@font-face {
+  font-family: 'DetailLight';
+  src: url('../fonts/Quicksand-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Title';
+  src: url('../fonts/Cinzel-Regular.ttf') format('truetype');
+}
+
+$dot-matrix-font: "DotMatrix", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$dot-matrix-light-font: "DotMatrixLight", Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$detail-font: "Detail", sans-serif;
+$detail-light-font: "DetailLight", sans-serif;
+$title-font: "Title", serif;

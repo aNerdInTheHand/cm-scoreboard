@@ -1,5 +1,11 @@
+@import './fonts';
+
 $titleBackground: '#f9f7f7';
 $titleText: '#444343';
+
+.scoreboard-row {
+  min-height: 50px;
+}
 
 #scoreboardWrapper {
   display: flex;
@@ -9,5 +15,6 @@ $titleText: '#444343';
 #scoreboard-title p {
   background-color: $titleBackground;
   color: $titleText;
+  font-family: $title-font;
   text-align: center;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 // import {Wrapper,Title} from './styles/styled-components.js'
 // import Button from './styles/core/js-styles/Button.js'
-import NumberBlock from './styles/core/js-styles/NumberBlock'
+import NumberBlock from './components/NumberBlock'
 import propTypes, { defaultProps } from './propTypes/scoreboard'
 
 export default class Scoreboard extends Component {
@@ -17,9 +17,7 @@ export default class Scoreboard extends Component {
         </div>
         <div id='scoreboard-middle-row' className='scoreboard-row'>
           <div>
-            <NumberBlock>
-              5
-            </NumberBlock>
+            <NumberBlock primaryNumber={5} />
           </div>
         </div>
         <div id='scoreboard-bottom-row' className='scoreboard-row'>

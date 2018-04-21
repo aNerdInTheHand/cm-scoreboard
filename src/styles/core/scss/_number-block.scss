@@ -1,0 +1,10 @@
+@import './fonts';
+$dirtyBlack: '#444343';
+$yellow: '#ffdf94';
+
+.number-block {
+  background-color: $dirtyBlack;
+  color: $yellow;
+  font-family: $dot-matrix-font;
+  height: 100%;
+}
