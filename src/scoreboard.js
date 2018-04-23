@@ -1,28 +1,49 @@
 import React, { Component } from 'react'
-// import {Wrapper,Title} from './styles/styled-components.js'
-// import Button from './styles/core/js-styles/Button.js'
 import NumberBlock from './components/NumberBlock'
 import propTypes, { defaultProps } from './propTypes/scoreboard'
 
 export default class Scoreboard extends Component {
-  // clickFunction () {
-  //   this.props.onButtonClick()
-  // }
+  renderLeftPanel () {
+    return (
+      <div className='scoreboard-left-panel'>
+        <p>{this.props.homeTeam}</p>
+        <NumberBlock primaryNumber={5} />
+        <p>{this.props.awayTeam}</p>
+        <NumberBlock primaryNumber={1} />
+      </div>
+    )
+  }
+
+  renderBottomRow () {
+    return (
+      <div id='scoreboard-bottom-row' className='scoreboard-row'>
+        <p>Some other stuff</p>
+      </div>
+    )
+  }
+
+  renderMiddleRow () {
+    return (
+      <div id='scoreboard-middle-row' className='scoreboard-row'>
+        {this.renderLeftPanel()}
+      </div>
+    )
+  }
+
+  renderTitle () {
+    return (
+      <div id='scoreboard-title' className='scoreboard-row'>
+        <p>The Scottish & Newcastle United Scoreboard</p>
+      </div>
+    )
+  }
 
   render () {
     return (
       <div id='scoreboard-wrapper'>
-        <div id='scoreboard-title' className='scoreboard-row'>
-          <p>The Scottish & Newcastle United Scoreboard</p>
-        </div>
-        <div id='scoreboard-middle-row' className='scoreboard-row'>
-          <div>
-            <NumberBlock primaryNumber={5} />
-          </div>
-        </div>
-        <div id='scoreboard-bottom-row' className='scoreboard-row'>
-          <p>Some other stuff</p>
-        </div>
+        {this.renderTitle()}
+        {this.renderMiddleRow()}
+        {this.renderBottomRow()}
       </div>
     )
   }

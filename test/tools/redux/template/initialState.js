@@ -1,3 +1,5 @@
 export default {
-  count: 0
+  awayTeam: 'Sunderland',
+  count: 0,
+  homeTeam: 'Newcastle'
 }

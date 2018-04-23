@@ -9,7 +9,6 @@ export default class NumberBlock extends Component {
   }
 
   renderPrimary () {
-    console.log(`here`)
     return this.props.showLeadingZeros
       ? this.addLeadingZero(this.props.primaryNumber)
       : this.props.primaryNumber
@@ -22,11 +21,12 @@ export default class NumberBlock extends Component {
   }
 
   render () {
-    console.log(this.props)
     return (
       <div className='number-block'>
-        {!this.props.showSecondaryNumber && this.renderPrimary()}
-        {this.props.showSecondaryNumber && this.renderWithSecondary()}
+        <p className='number-block-number'>
+          {!this.props.showSecondaryNumber && this.renderPrimary()}
+          {this.props.showSecondaryNumber && this.renderWithSecondary()}
+        </p>
       </div>
     )
   }

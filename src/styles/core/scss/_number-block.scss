@@ -1,10 +1,22 @@
 @import './fonts';
-$dirtyBlack: '#444343';
-$yellow: '#ffdf94';
+$dirtyBlack: #444343;
+$yellow: #ffdf94;
+$boxHeight: 50px;
+$boxWidth: 50px;
+$textSize: calc(#{$boxWidth} * 0.9);
 
 .number-block {
+  align-items: center;
   background-color: $dirtyBlack;
+  border: 1px solid black;
   color: $yellow;
+  display: flex;
   font-family: $dot-matrix-font;
-  height: 100%;
+  height: $boxHeight;
+  justify-content: center;
+  width: $boxWidth;
+}
+
+.number-block-number {
+  font-size: $textSize;
 }
