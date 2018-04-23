@@ -3,12 +3,36 @@
 $titleBackground: '#f9f7f7';
 $titleText: '#444343';
 
+div, p {
+  border: 1px solid black;
+}
+
 .scoreboard-row {
+  display: flex;
   min-height: 50px;
 }
 
+.scoreboard-panel {
+  display: block;
+}
+
+.scoreboard-panel-centre {
+  width: 50%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.quarter-width {
+  width: 25%;
+}
+
+.team-label {
+  display: block;
+}
+
 #scoreboardWrapper {
-  display: flex;
   width: 100%;
 }
 

@@ -3,29 +3,35 @@ import NumberBlock from './components/NumberBlock'
 import propTypes, { defaultProps } from './propTypes/scoreboard'
 
 export default class Scoreboard extends Component {
+  getWidth () {
+    return this.props.showCentrePanel ? 'quarter-width' : 'half-width'
+  }
+
+  renderCentrePanel () {
+    return <div className='scoreboard-panel half-width'>Centre Panel Content</div>
+  }
+
   renderLeftPanel () {
     return (
-      <div className='scoreboard-left-panel'>
-        <p>{this.props.homeTeam}</p>
+      <div className={`scoreboard-panel ${this.getWidth()}`}>
+        <div className='team-label'>{this.props.homeTeam}</div>
         <NumberBlock primaryNumber={5} />
-        <p>{this.props.awayTeam}</p>
+        <div className='team-label'>{this.props.awayTeam}</div>
         <NumberBlock primaryNumber={1} />
       </div>
     )
   }
 
-  renderBottomRow () {
-    return (
-      <div id='scoreboard-bottom-row' className='scoreboard-row'>
-        <p>Some other stuff</p>
-      </div>
-    )
+  renderRightPanel () {
+    return <div className={`scoreboard-panel ${this.getWidth()}`}>Right Panel Content</div>
   }
 
-  renderMiddleRow () {
+  renderBoard () {
     return (
-      <div id='scoreboard-middle-row' className='scoreboard-row'>
+      <div id='scoreboard-main-row' className='scoreboard-row'>
         {this.renderLeftPanel()}
+        {this.renderCentrePanel()}
+        {this.renderRightPanel()}
       </div>
     )
   }
@@ -42,8 +48,7 @@ export default class Scoreboard extends Component {
     return (
       <div id='scoreboard-wrapper'>
         {this.renderTitle()}
-        {this.renderMiddleRow()}
-        {this.renderBottomRow()}
+        {this.renderBoard()}
       </div>
     )
   }

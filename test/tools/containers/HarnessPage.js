@@ -4,11 +4,13 @@ import { connect } from 'react-redux'
 import Harness from '../components/Harness.js'
 
 import { increment } from '../redux/template/actions'
+const TRUE = true
+// const FALSE = false
 
 export class HarnessPage extends Component {
   render () {
     return (
-      <Harness {...this.props} />
+      <Harness {...this.props} showCentrePanel={TRUE} />
     )
   }
 }
