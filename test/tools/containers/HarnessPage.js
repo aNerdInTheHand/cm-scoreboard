@@ -5,12 +5,17 @@ import Harness from '../components/Harness.js'
 
 import { increment } from '../redux/template/actions'
 const TRUE = true
-// const FALSE = false
+const FALSE = false
+const breakStyle = { height: '50px', backgroundColor: '#c0c0c0' }
 
 export class HarnessPage extends Component {
   render () {
     return (
-      <Harness {...this.props} showCentrePanel={TRUE} />
+      <div>
+        <Harness {...this.props} showCentrePanel={TRUE} />
+        <div style={breakStyle} />
+        <Harness {...this.props} showCentrePanel={FALSE} />
+      </div>
     )
   }
 }

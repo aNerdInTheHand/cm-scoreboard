@@ -9,12 +9,12 @@ export default class Harness extends Component {
       <Scoreboard
         awayTeam={this.props.template.awayTeam}
         homeTeam={this.props.template.homeTeam}
+        showCentrePanel={this.props.showCentrePanel}
         />
     )
   }
 
   render () {
-    console.log(this.props)
     return (
       <div>
         {this.renderTemplate()}

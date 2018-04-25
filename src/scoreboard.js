@@ -30,7 +30,7 @@ export default class Scoreboard extends Component {
     return (
       <div id='scoreboard-main-row' className='scoreboard-row'>
         {this.renderLeftPanel()}
-        {this.renderCentrePanel()}
+        {this.props.showCentrePanel && this.renderCentrePanel()}
         {this.renderRightPanel()}
       </div>
     )

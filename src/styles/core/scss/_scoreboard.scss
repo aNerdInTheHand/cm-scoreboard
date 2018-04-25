@@ -9,15 +9,14 @@ div, p {
 
 .scoreboard-row {
   display: flex;
+  justify-content: center;
   min-height: 50px;
 }
 
 .scoreboard-panel {
-  display: block;
-}
-
-.scoreboard-panel-centre {
-  width: 50%;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
 }
 
 .half-width {
@@ -40,5 +39,8 @@ div, p {
   background-color: $titleBackground;
   color: $titleText;
   font-family: $title-font;
+  font-size: 1.4rem;
   text-align: center;
+  padding-top: 0.5rem;
+  width: 100%;
 }
