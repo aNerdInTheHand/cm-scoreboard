@@ -3,7 +3,7 @@ import propTypes, { defaultProps } from '../propTypes/numberBlock'
 
 export default class NumberBlock extends Component {
   addLeadingZero (n) {
-    return n.toString.length() > 1
+    return n.toString().length < 2
       ? `0${n}`
       : n
   }

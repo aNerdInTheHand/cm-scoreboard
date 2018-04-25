@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import NumberBlock from './components/NumberBlock'
 import propTypes, { defaultProps } from './propTypes/scoreboard'
+const TRUE = true
 
 export default class Scoreboard extends Component {
   getWidth () {
@@ -23,7 +24,15 @@ export default class Scoreboard extends Component {
   }
 
   renderRightPanel () {
-    return <div className={`scoreboard-panel ${this.getWidth()}`}>Right Panel Content</div>
+    console.log(this.props)
+    return <div className={`scoreboard-panel ${this.getWidth()}`}>
+      <NumberBlock
+        primaryNumber={this.props.minutes}
+        secondaryNumber={this.props.seconds}
+        showLeadingZeros={TRUE}
+        showSecondaryNumber={TRUE}
+      />
+    </div>
   }
 
   renderBoard () {

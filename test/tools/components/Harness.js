@@ -9,6 +9,8 @@ export default class Harness extends Component {
       <Scoreboard
         awayTeam={this.props.template.awayTeam}
         homeTeam={this.props.template.homeTeam}
+        minutes={88}
+        seconds={9}
         showCentrePanel={this.props.showCentrePanel}
         />
     )
