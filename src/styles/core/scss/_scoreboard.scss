@@ -28,7 +28,9 @@ div, p {
 }
 
 .team-label {
-  display: block;
+  // display: block;
+  font-family: $detail-font;
+  font-size: 1.2rem;
 }
 
 #scoreboardWrapper {
