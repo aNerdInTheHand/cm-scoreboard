@@ -1,6 +1,7 @@
 import {
   bool,
   func,
+  oneOfType,
   number,
   string
 } from 'prop-types'
@@ -17,6 +18,7 @@ export default {
   homeTeam: string.isRequired,
   minutes: number,
   onButtonClick: func,
+  scorer: oneOfType([number, string]),
   seconds: number,
   showCentrePanel: bool,
   showSeconds: bool,

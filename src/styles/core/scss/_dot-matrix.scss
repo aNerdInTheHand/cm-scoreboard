@@ -10,7 +10,7 @@ $textSize: calc(#{$boxWidth} * 0.9);
   color: $yellow;
   // display: inline-flex;
   font-family: $dot-matrix-font;
-  height: $boxHeight;
+  min-height: $boxHeight;
   justify-content: center;
   // width: $boxWidth;
 }

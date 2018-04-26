@@ -3,7 +3,7 @@
 $titleBackground: '#f9f7f7';
 $titleText: '#444343';
 
-div, p {
+div {
   border: 1px solid black;
 }
 
@@ -27,7 +27,7 @@ div, p {
   width: 25%;
 }
 
-.team-label {
+.scoreboard-label {
   // display: block;
   font-family: $detail-font;
   font-size: 1.2rem;

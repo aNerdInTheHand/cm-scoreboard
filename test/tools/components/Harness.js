@@ -12,6 +12,7 @@ export default class Harness extends Component {
         minutes={88}
         seconds={9}
         showCentrePanel={this.props.showCentrePanel}
+        scorer={'SHOLA'}
         />
     )
   }
